@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hablemos</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init('9AbS2T91S1KjWvccp'); 
+      })();
+    </script>
+    
+    <script src="contact.js" defer></script>
+  </head>
+  <body>
+    <div class="card contact-card">
+      <h2>Hablemos</h2>
+      <p>¿Tienes alguna pregunta o propuesta? Déjame un mensaje y me pondré en contacto contigo lo antes posible.</p>
+
+      <div class="contact-image">
+        <img src="assets/contact.gif" alt="Contáctame" class="contact-gif">
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+
+      <div id="formStatus" class="form-status"></div>
+
+      <a href="index.html" class="link-card">Volver al portafolio</a>
+    </div>
+  </body>
+</html>
